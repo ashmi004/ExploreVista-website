@@ -1,0 +1,118 @@
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor:hsl(187,85%,43%);
+    --gradientColor:linear-gradient(to right,hsl(187,85%,43%),hsl(199,100%,33%));
+    --bodyColor:rgb(240,240,246);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --cardBG:rgb(225,225,235);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+  }
+.info{
+    background: rgb(185, 185, 251);
+    .infoContainer{
+        .titleDiv{
+            flex-direction:column;
+            text-align:center;
+            gap:1rem;
+            justify-content: space-between;
+            padding:3rem;
+
+            .btn{
+                padding:1rem;
+                border-radius:3rem;
+            }
+
+        }
+
+        .cardsDiv{
+            gap:0.5rem;
+            margin-top:1rem;
+
+            .singleCard{
+                background:var(--whiteColor);
+                padding:3rem 2rem;
+                border-radius:10rem;
+                gap:1rem;
+                text-align:center;
+                margin:auto;
+                height:320px;
+                width:90%;
+                max-width:250px;
+
+                .iconDiv{
+                    justify-content: center;
+                    margin:auto;
+                    background:var(--SecondaryColor);
+                    width:max-content;
+                    height:55px;
+                    padding:1rem;
+                    border-radius:3rem;
+
+                    .icon{
+                        color:var(--whiteColor);
+                    }
+
+                }
+                .cardTitle{
+                    color:var(--blackColor);
+                    font-weight:700;
+                }
+
+                .colorOne{
+                    background:orange;          
+                      }
+                .colorTwo{
+                        background:blue;                }
+
+
+
+            }
+        }
+    }
+
+}
+@media screen and (min-width:570px){
+    .info{
+        .infoContainer{
+            .titleDiv{
+            flex-direction: row;
+            h2{
+                text-align:left;
+                max-width:500px;
+            }
+        }
+
+        .cardsDiv{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+ 
+}
+}
+@media screen and (min-width:768px){
+    .info{
+        .infoContainer{
+            padding :0 9rem;
+            .titleDiv{
+                width:90%;
+                margin:auto;
+                align-items:center;
+            
+          
+        }
+
+        .cardsDiv{
+            grid-template-columns: repeat(3,1fr);
+
+            .singleCard{
+                max-width:260px;
+                padding:3rem;
+            }
+        }
+    }
+ 
+}
+}

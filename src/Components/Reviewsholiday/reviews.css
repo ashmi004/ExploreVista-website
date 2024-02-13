@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Avestan&family=Poppins:wght@300;400;500;600;700&display=swap");
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor:hsl(187,85%,43%);
+    --gradientColor:linear-gradient(to right,hsl(187,85%,43%),hsl(199,100%,33%));
+    --bodyColor:rgb(240,240,246);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --cardBG:rgb(225,225,235);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+  }
+
+  .review{
+    .secContainer{
+        .textDiv{
+            .redText{
+                font-size:0.813rem;
+                display:block;
+                color:var(--PrimaryColor);
+                font-weight:700;
+                padding:.5rem;
+            }
+
+            h3{
+                font-size:1.25rem;
+                color:var(--blackColor);
+                padding:1rem 0;
+            }
+
+            p{
+                color:var(--blackColor);
+            }
+
+            .stars{
+                gap:.4rem;
+                padding:1rem 0;
+                .icon{
+                    color:var(--PrimaryColor);
+                    font-size:1rem;
+                }
+            }
+
+            .clientsImages{
+                gap:1rem;
+                img{
+                    height:40px;
+                    width:40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    border:2px solid rgb(255,255,255);
+                    box-shadow: 0 0 2px 2px rgb(98, 149, 225);
+                }
+            }
+        }
+
+        .imgDiv{
+            height:250px;
+            width:100%;
+            border-radius: 10px;
+            overflow:hidden;
+            img{
+                object-fit: cover;
+                
+            }
+        }
+    }
+  }
+
+  @media screen and (min-width:480px){
+    .review{
+        .secContainer{
+            .textDiv{
+                .redText{
+                    font-size:0.938rem;
+                }
+
+                h3{
+                    font-size: 20px;
+                    color:var(--blackColor);
+                }
+                p{
+                    color:var(--blackColor);
+                    font-size: 0.938rem;
+                }
+
+                .stars{
+                    .icon{
+                        font-size: 1.25rem;
+                    }
+                }
+
+                .clientsImages{
+                    img{
+                        height:50px;
+                        width:50px;
+                    }
+                }
+            }
+
+            .imgDiv{
+                height:250px;
+                width: 100%;
+                img{
+                    height:100%;
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+  }
+  
+  @media screen and (min-width:740px){
+    .review{
+        .secContainer{
+            grid-template-columns: repeat(2,1fr);
+
+            .textDiv{
+                .redText{
+                    font-size: 0.938rem;
+                }
+                h3{
+                    font-size:20px;
+                    color:0.938rem;
+                }
+
+                p{
+                    color:var(--blackColor);
+                    font-size:0.938rem;
+                }
+
+                .stars{
+                    .icon{
+                        font-size:1.25rem;
+
+                    }
+                }
+
+                .clientsImages{
+                    img{
+                        height:50px;
+                        width:50px;
+                    }
+                }
+            }
+
+        }
+    }
+  }
+
+  @media screen and (min-width:1240px){
+    .review{
+        .secContainer{
+            gap:3rem;
+
+            .textDiv{
+                .redText{
+                    font-size: 1rem;
+                }
+
+                h3{
+                    font-size: 2.2rem;
+                    color:var(--blackColor);
+                }
+                p{
+                    color:var(--blackColor);
+                    font-size: 1rem;
+                    line-height:2rem;
+                }
+            }
+
+            .imgDiv{
+                height:300px;
+            }
+        }
+    }
+  }

@@ -1,0 +1,168 @@
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor:hsl(187,85%,43%);
+    --gradientColor:linear-gradient(to right,hsl(187,85%,43%),hsl(199,100%,33%));
+    --bodyColor:rgb(240,240,246);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --cardBG:rgb(225,225,235);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+  }
+  
+  .aome{
+      padding-top:5rem;
+      text-align:center;
+      gap:2rem;
+      flex-direction:column;
+  
+      .aainText{
+          color:var(--blackColor);
+          font-weight:700;
+          font-size:15px;
+          line-height:3rem;
+          padding-top:.5rem;
+      }
+  
+      .aomeImages{
+          width:60%;
+          margin:1rem auto 0;
+          justify-content: center;
+          align-items:center;
+          position:relative;
+          border-radius:5rem;
+  
+          .aideoDiv{
+              width:100%;
+              border-radius:50%;
+  
+  
+          }
+          
+  
+         
+  
+          .alane{
+              position:absolute;
+              width:100%;
+              top:-5%;
+          }
+      }
+  
+  }
+  
+  @media screen and (min-width:480px){
+      .aome{
+          padding-top: 9rem;
+  
+      }
+  }
+  @media screen and (min-width:570px){
+      .aome{
+          .aainText{
+              width:80%;
+          }
+  
+          .aomeImages{
+              .video{
+                  border-radius:15rem;
+              }
+  
+              .alane{
+                  position:absolute;
+                  width:95%;
+                  top:-8%;
+              }
+          }
+  
+      }
+  }
+  @media screen and (min-width:680px){
+      .aome{
+          .aainText{
+              width:80%;
+          }
+  
+          .aomeImages{
+              .aideoDiv{
+                  width:80%;
+                  .video{
+                      height: 100%;
+                      width:100%;
+                      border-radius:15rem;
+                  }
+              }
+  
+              .alane{
+                 
+                  width:95%;
+                  top:-8%;
+              }
+          }
+  
+      }
+  }
+  @media screen and (min-width:960px){
+      .aome{
+          padding-top:10rem;
+          .aainText{
+              width:80%;
+              padding-bottom:1.5rem;
+              font-size:22px;
+              line-height:4rem;
+          }
+  
+          .aomeImages{
+              .aideoDiv{
+                  width:80%;
+                  .video{
+                      height: 100%;
+                      width:100%;
+                      border-radius:15rem;
+                  }
+              }
+  
+              .alane{
+                 
+                  width:95%;
+                  top:-8%;
+              }
+          }
+  
+      }
+  }
+  /* @media screen and (min-width:1024px){
+      .home{
+          
+          .mainText{
+              width:60%;
+              
+              font-size:25px;
+              line-height:4rem;
+          }
+  
+          .homeImages{
+              .videoDiv{
+                  width:90%;
+                  height:300px;
+                  .video{
+                      height: 100%;
+                      width:100%;
+                      border-radius:15rem;
+                      object-fit:cover;
+                  }
+              }
+  
+              .plane{
+                 
+                  width:100%;
+                  top:-10%;
+              }
+          }
+  
+      }
+  } */
+  
+  
+  

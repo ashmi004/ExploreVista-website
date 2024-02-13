@@ -1,0 +1,209 @@
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor:hsl(187,85%,43%);
+    --gradientColor:linear-gradient(to right,hsl(187,85%,43%),hsl(199,100%,33%));
+    --bodyColor:rgb(240,240,246);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --cardBG:rgb(225,225,235);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+  }
+
+  .search{
+    .sectionContainer{
+        width:100%;
+        padding:1.5rem;
+        border:2px solid var(--cardBG);
+        border-radius:16px;
+        row-gap:2rem;
+
+        .btns{
+            background:rgb(199, 199, 247);
+            padding:.5rem;
+            border-radius: 1rem;
+            flex-direction:column;
+            width:100%;
+            margin:auto;
+
+            .singleBtn{
+                padding:.8rem 1.5rem;
+                font-size:13px;
+                border-radius:3rem;
+                width:80%;
+                text-align:center;
+
+                &:hover{
+                    background:var(--PrimaryColor);
+                    color:var(--whiteColor);
+                    font-weight:500;
+                    transition: .4s ease;
+                }
+            }
+
+            .active{
+                background:var(--PrimaryColor);
+                color:var(--whiteColor);
+                font-weight:500;
+
+            }
+        }
+
+        .searchInputs{
+            width:100%;
+            justify-content: center;
+            flex-direction: column;
+            gap:1.5rem;
+
+            .singleInput{
+                .iconDiv{
+                    padding:16px 10px;
+                    border-radius: 3rem;
+                    background:var(--cardBG);
+                    margin-right:1rem;
+
+                    .icon{
+                        color:var(--blackColor);
+                        opacity:.7rem;
+                    }
+                }
+
+                .texts{
+                    h4{
+                        padding-top:0;
+                        padding-bottom:0.7rem;
+                        color:var(--blackColor);
+                        font-weight: 700;
+
+                    }
+
+                    input{
+                        width:95%;
+                        border:none;
+                        outline:none;
+                        background: transparent;
+
+                        &::placeholder{
+                            font-size:12px;
+                            opacity:.5;
+                        }
+                    }
+                }
+            }
+
+        }
+        .btn{
+            padding:.5rem;
+            justify-content: center;
+        }
+
+    }
+  }
+
+  @media screen and (min-width:480px){
+    .search{
+       .sectionContainer{
+
+        .btn{
+            border-radius: 3rem;
+        }
+        .searchInputs{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+
+       }
+
+    }
+}
+@media screen and (min-width:570px){
+    .search{
+       .sectionContainer{
+        .btns{
+            border-radius:3rem;
+            flex-direction:row;
+        }
+       
+
+       }
+
+    }
+}
+@media screen and (min-width:680px){
+    .search{
+       .sectionContainer{
+        .btn{
+            border-radius:3rem;
+            flex-direction: row;
+            
+        }
+
+        .searchInputs{
+            grid-template-columns: repeat(3,1fr);
+        }
+       
+
+       }
+
+    }
+}
+@media screen and (min-width:768px){
+    .search{
+       .sectionContainer{
+        .btns{
+            width:70%;
+            border-radius:3rem;
+            flex-direction: row;
+            
+        }
+
+        .searchInputs{
+            grid-template-columns: repeat(4,1fr);
+
+            .singleInput{
+                .texts{
+                    input{
+                        width:100%;
+                    }
+
+                }
+            }
+        }
+       
+
+       }
+
+    }
+}
+@media screen and (min-width:960px){
+    .search{
+       .sectionContainer{
+        
+
+        .searchInputs{
+            grid-template-columns: repeat(5,1fr);
+
+         
+        }
+       
+
+       }
+
+    }
+}
+@media screen and (min-width:1024px){
+    .search{
+       .sectionContainer{
+        .btns{
+            width:50%;
+        }
+        
+
+       
+       
+
+       }
+
+    }
+}

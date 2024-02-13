@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Avestan&family=Poppins:wght@300;400;500;600;700&display=swap");
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor:hsl(187,85%,43%);
+    --gradientColor:linear-gradient(to right,hsl(187,85%,43%),hsl(199,100%,33%));
+    --bodyColor:rgb(240,240,246);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --cardBG:rgb(225,225,235);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+  }
+
+  .portfolio{
+    .secContainer{
+        padding-top:3rem;
+        gap:2rem;
+        .leftContent{
+
+            .grid{
+                .singlePortfolio{
+                    gap:1rem;
+                    align-items:flex-start;
+
+                    .iconDiv{
+                        img{
+                            height:50px;
+                            width:50px;
+                        }
+                    }
+
+                    .infor{
+                        h4{
+                        padding-bottom: 0.5rem;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+  }
+
+@media screen and (min-width:480px){
+    .portfolio{
+        .secContainer{
+            .leftContent{
+                .secHeading{
+                    h3{
+                        font-size:1.25rem;
+                    }
+                    p{
+                        font-size: 0.938rem;
+                        padding:.5rem 0;
+                    }
+                }
+
+                .grid{
+                    .singlePortfolio{
+                        gap:1.5rem;
+
+                        .iconDiv{
+                            img{
+                                height: 60px;
+                                width: 60px;
+                            }
+                        }
+
+                        .infor{
+                            padding-bottom: .5rem;
+                            font-size:1rem;
+                        }
+                        p{
+                            font-size: 0.938rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+
+@media screen and (min-width:660px){
+    .portfolio{
+        .secContainer{
+            .leftContent{
+                .secHeading{
+                    h3{
+                        font-size: 2rem;
+                    }
+                    p{
+                        font-size:1rem;
+                    }
+                }
+
+                .grid{
+                    grid-template-columns: repeat(2,1fr);
+                    .singlePortfolio{
+                        gap:1.5rem;
+                    }
+                }
+            }
+
+            .rightContent{
+                margin:auto;
+                display:flex;
+                align-items:center;
+                img{
+                    margin:auto;
+                    max-width:80%;
+                   
+                    width:70%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:820px){
+    .portfolio{
+        .secContainer{
+            grid-template-columns: repeat(2,1fr);
+
+            .leftContent{
+                .secHeading{
+                    h3{
+                        font-size:1.25rem;
+                    }
+                    p{
+                        font-size:1rem;
+                    }
+                }
+
+                .grid{
+                    grid-template-columns: repeat(1,1fr);
+                    .singlePortfolio{
+                        gap:1.5rem;
+                    }
+                }
+            }
+
+            .rightContent{
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1240px){
+    .portfolio{
+        .secContainer{
+            gap:3rem;
+
+            .leftContent{
+                .secHeading{
+                    h3{
+                        font-size:2rem;
+                    }
+                    p{
+                        font-size:1rem;
+                    }
+                }
+
+                .grid{
+                    gap:2.5rem;
+                    margin-top:3rem;
+                    .singlePortfolio{
+                        gap:2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

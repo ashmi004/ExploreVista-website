@@ -1,0 +1,163 @@
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor:hsl(187,85%,43%);
+    --gradientColor:linear-gradient(to right,hsl(187,85%,43%),hsl(199,100%,33%));
+    --bodyColor:rgb(240,240,246);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --cardBG:rgb(225,225,235);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+  }
+.travelers{
+    .sectionContainer{
+        text-align:center;
+
+        .heading{
+            padding:1rem;
+        }
+
+        .travelerContainer{
+            margin-top:1rem;
+            gap:1.5rem;
+
+            .singleTraveler{
+                position:relative;
+                height:280px;
+                width:85%;
+                max-width:250px;
+                overflow:hidden;
+                border-radius:10rem;
+                gap:1rem;
+                margin:auto;
+
+                .destinationImage, .travelerImage, .travelerName{
+                    position:absolute;
+                }
+
+                .destinationImage{
+                    position:absolute;
+                    height:100%;
+                    width:100%;
+                    top:0;
+                    right:0;
+                    left:0;
+                    bottom:0;
+                    object-fit:cover;
+
+                }
+                .travelerPicture{
+                .travelerImage{
+                    height:50px;
+                    width:50px;
+                    object-fit:cover;
+                    border-radius:50%;
+                    bottom:30px;
+                    left:50%;
+                    transform:translateX(-50%);
+                    border:5px solid rgba(225,225,225,0.637);
+                    transition:.4s ease-in-out;
+                    animation: animated 2.3s infinite;
+
+                }
+
+                @keyframes animated{
+                    0%{
+                        transform: translateY(0px);
+                    }
+                    50%{
+                        transform: translateY(8px);
+                    }
+                    100%{
+                        transform: translateY(0px);
+                    }
+                }
+            }
+
+                .travelerName{
+                    bottom:-100%;
+                    width:100%;
+                    height:max-content;
+                    background: var(--whiteColor);
+                    padding:1.5rem 1rem;
+                    transition:0.4s ease-in-out;
+                    animation: animatedBorders 2.3s infinite;
+
+                    span{
+                        display:block;
+                        color:black;
+                        font-weight: 700;
+                    }
+                }
+                
+                @keyframes animatedBorders{
+                    0%{
+                        border-radius:0rem;
+                    }
+                    50%{
+                        border-radius:2rem;
+                    }
+                    100%{
+                        border-radius:0rem;
+                    }
+                }
+
+                &:hover{
+                    .travelerName{
+                        bottom:0;
+                        transition:1s ease-in-out;
+                    }
+
+                    .travelerImage{
+                        bottom:110px;
+                        transition:1s ease-in-out;
+                    }
+                }
+                
+
+
+
+
+            }
+
+        }
+    }
+}
+@media screen and (min-width:480px){
+    .travelers{
+        .sectionContainer{
+            .travelerContainer{
+                grid-template-columns: repeat(2,1fr);
+        }
+    }
+    }
+}
+@media screen and (min-width:570px){
+    .travelers{
+        .sectionContainer{
+            .travelerContainer{
+                grid-template-columns: repeat(3,1fr);
+        }
+    }
+    }
+}
+@media screen and (min-width:768px){
+    .travelers{
+        .sectionContainer{
+            .travelerContainer{
+                grid-template-columns: repeat(3,1fr);
+        }
+    }
+    }
+}
+@media screen and (min-width:960px){
+    .travelers{
+        .sectionContainer{
+            .travelerContainer{
+                grid-template-columns: repeat(4,1fr);
+                margin:3rem 0;
+        }
+    }
+    }
+}
