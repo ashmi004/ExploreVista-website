@@ -63,7 +63,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 #Contributors
 - [Charmi Edula](https://github.com/charmi2109)
-- [Sakshi Ghoti](https://github.com/sakshighoti)
+
   
   
 ### Deployment
